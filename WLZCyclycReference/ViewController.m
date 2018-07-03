@@ -94,6 +94,7 @@
         NSLog(@"currentThread == %@",mainQueue);
         sleep(3);
         NSLog(@"2");
+        NSLog(@"123");
     });
     NSLog(@"主线程执行完了");
 }
