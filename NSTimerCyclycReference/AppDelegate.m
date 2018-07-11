@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  WLZCyclycReference
+//  TFQCyclycReference
 //
 //  Created by 王立志 on 2018/6/18.
-//  Copyright © 2018年 王立志. All rights reserved.
+//  Copyright © 2018年 Thread_Fight_Queue. All rights reserved.
 //
 
 #import "AppDelegate.h"

@@ -1,20 +1,20 @@
 //
-//  WLZTimer.m
-//  WLZCyclycReference
+//  TFQTimer.m
+//  TFQCyclycReference
 //
 //  Created by 王立志 on 2018/6/19.
-//  Copyright © 2018年 王立志. All rights reserved.
+//  Copyright © 2018年 Thread_Fight_Queue. All rights reserved.
 //
 
-#import "WLZTimer.h"
+#import "TFQTimer.h"
 
-@interface WLZTimer ()
+@interface TFQTimer ()
 
 @property (nonatomic, strong)NSTimer *timer;
 
 @end
 
-@implementation WLZTimer
+@implementation TFQTimer
 
 - (instancetype)initWithTimeInterval:(NSTimeInterval)interval Target:(id)target andSelector:(SEL)selector{
     if(self == [super init]){
@@ -42,7 +42,7 @@
 }
 
 - (void)dealloc{
-    NSLog(@"WLZTimer dealloc");
+    NSLog(@"TFQTimer dealloc");
 }
 
 @end

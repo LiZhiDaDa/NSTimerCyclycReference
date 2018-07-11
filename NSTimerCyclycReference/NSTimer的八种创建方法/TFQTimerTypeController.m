@@ -1,18 +1,18 @@
 //
-//  WLZTimerTypeController.m
-//  WLZCyclycReference
+//  TFQTimerTypeController.m
+//  TFQCyclycReference
 //
 //  Created by 王立志 on 2018/6/19.
-//  Copyright © 2018年 王立志. All rights reserved.
+//  Copyright © 2018年 Thread_Fight_Queue. All rights reserved.
 //
 
-#import "WLZTimerTypeController.h"
+#import "TFQTimerTypeController.h"
 
-@interface WLZTimerTypeController ()
+@interface TFQTimerTypeController ()
 
 @end
 
-@implementation WLZTimerTypeController
+@implementation TFQTimerTypeController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

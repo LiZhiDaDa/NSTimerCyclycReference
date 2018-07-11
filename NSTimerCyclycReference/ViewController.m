@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  WLZCyclycReference
+//  TFQCyclycReference
 //
 //  Created by 王立志 on 2018/6/18.
-//  Copyright © 2018年 王立志. All rights reserved.
+//  Copyright © 2018年 Thread_Fight_Queue. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "WLZSecondController.h"
+#import "TFQSecondController.h"
 
 @interface ViewController ()
 
@@ -26,7 +26,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    WLZSecondController *second = [[WLZSecondController alloc] init];
+    TFQSecondController *second = [[TFQSecondController alloc] init];
     [self.navigationController pushViewController:second animated:YES];
 }
 

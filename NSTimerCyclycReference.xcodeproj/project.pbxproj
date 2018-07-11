@@ -13,9 +13,9 @@
 		F70789E920D75D4C0066F7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70789E820D75D4C0066F7F4 /* Assets.xcassets */; };
 		F70789EC20D75D4C0066F7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70789EA20D75D4C0066F7F4 /* LaunchScreen.storyboard */; };
 		F70789EF20D75D4C0066F7F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F70789EE20D75D4C0066F7F4 /* main.m */; };
-		F7078A1820D89DCC0066F7F4 /* WLZTimerTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7078A1720D89DCC0066F7F4 /* WLZTimerTypeController.m */; };
-		F7078A1E20D8D8710066F7F4 /* WLZTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7078A1D20D8D8710066F7F4 /* WLZTimer.m */; };
-		F7E9E0A420D953580009D1D8 /* WLZSecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7078A1220D75D800066F7F4 /* WLZSecondController.m */; };
+		F7078A1820D89DCC0066F7F4 /* TFQTimerTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7078A1720D89DCC0066F7F4 /* TFQTimerTypeController.m */; };
+		F7078A1E20D8D8710066F7F4 /* TFQTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7078A1D20D8D8710066F7F4 /* TFQTimer.m */; };
+		F7E9E0A420D953580009D1D8 /* TFQSecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7078A1220D75D800066F7F4 /* TFQSecondController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,12 +48,12 @@
 		F70789EE20D75D4C0066F7F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F70789F420D75D4C0066F7F4 /* NSTimerCyclycReferenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSTimerCyclycReferenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70789FF20D75D4C0066F7F4 /* NSTimerCyclycReferenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSTimerCyclycReferenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7078A1120D75D800066F7F4 /* WLZSecondController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLZSecondController.h; sourceTree = "<group>"; };
-		F7078A1220D75D800066F7F4 /* WLZSecondController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLZSecondController.m; sourceTree = "<group>"; };
-		F7078A1620D89DCC0066F7F4 /* WLZTimerTypeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLZTimerTypeController.h; sourceTree = "<group>"; };
-		F7078A1720D89DCC0066F7F4 /* WLZTimerTypeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLZTimerTypeController.m; sourceTree = "<group>"; };
-		F7078A1C20D8D8710066F7F4 /* WLZTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLZTimer.h; sourceTree = "<group>"; };
-		F7078A1D20D8D8710066F7F4 /* WLZTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLZTimer.m; sourceTree = "<group>"; };
+		F7078A1120D75D800066F7F4 /* TFQSecondController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQSecondController.h; sourceTree = "<group>"; };
+		F7078A1220D75D800066F7F4 /* TFQSecondController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQSecondController.m; sourceTree = "<group>"; };
+		F7078A1620D89DCC0066F7F4 /* TFQTimerTypeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQTimerTypeController.h; sourceTree = "<group>"; };
+		F7078A1720D89DCC0066F7F4 /* TFQTimerTypeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQTimerTypeController.m; sourceTree = "<group>"; };
+		F7078A1C20D8D8710066F7F4 /* TFQTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQTimer.h; sourceTree = "<group>"; };
+		F7078A1D20D8D8710066F7F4 /* TFQTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +120,8 @@
 		F7078A1420D89C450066F7F4 /* NSTimer的八种创建方法 */ = {
 			isa = PBXGroup;
 			children = (
-				F7078A1620D89DCC0066F7F4 /* WLZTimerTypeController.h */,
-				F7078A1720D89DCC0066F7F4 /* WLZTimerTypeController.m */,
+				F7078A1620D89DCC0066F7F4 /* TFQTimerTypeController.h */,
+				F7078A1720D89DCC0066F7F4 /* TFQTimerTypeController.m */,
 			);
 			path = "NSTimer的八种创建方法";
 			sourceTree = "<group>";
@@ -129,10 +129,10 @@
 		F7078A1A20D8BAEC0066F7F4 /* CyclicReference */ = {
 			isa = PBXGroup;
 			children = (
-				F7078A1120D75D800066F7F4 /* WLZSecondController.h */,
-				F7078A1220D75D800066F7F4 /* WLZSecondController.m */,
-				F7078A1C20D8D8710066F7F4 /* WLZTimer.h */,
-				F7078A1D20D8D8710066F7F4 /* WLZTimer.m */,
+				F7078A1120D75D800066F7F4 /* TFQSecondController.h */,
+				F7078A1220D75D800066F7F4 /* TFQSecondController.m */,
+				F7078A1C20D8D8710066F7F4 /* TFQTimer.h */,
+				F7078A1D20D8D8710066F7F4 /* TFQTimer.m */,
 			);
 			path = CyclicReference;
 			sourceTree = "<group>";
@@ -199,9 +199,9 @@
 		F70789D420D75D4A0066F7F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = WLZ;
+				CLASSPREFIX = TFQ;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "王立志";
+				ORGANIZATIONNAME = Thread_Fight_Queue;
 				TargetAttributes = {
 					F70789DB20D75D4A0066F7F4 = {
 						CreatedOnToolsVersion = 9.3;
@@ -268,12 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7E9E0A420D953580009D1D8 /* WLZSecondController.m in Sources */,
+				F7E9E0A420D953580009D1D8 /* TFQSecondController.m in Sources */,
 				F70789E420D75D4A0066F7F4 /* ViewController.m in Sources */,
 				F70789EF20D75D4C0066F7F4 /* main.m in Sources */,
 				F70789E120D75D4A0066F7F4 /* AppDelegate.m in Sources */,
-				F7078A1820D89DCC0066F7F4 /* WLZTimerTypeController.m in Sources */,
-				F7078A1E20D8D8710066F7F4 /* WLZTimer.m in Sources */,
+				F7078A1820D89DCC0066F7F4 /* TFQTimerTypeController.m in Sources */,
+				F7078A1E20D8D8710066F7F4 /* TFQTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +447,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wlz.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TFQ.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,7 +464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wlz.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TFQ.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

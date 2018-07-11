@@ -1,26 +1,26 @@
 //
-//  WLZSecondController.m
-//  WLZCyclycReference
+//  TFQSecondController.m
+//  TFQCyclycReference
 //
 //  Created by 王立志 on 2018/6/18.
-//  Copyright © 2018年 王立志. All rights reserved.
+//  Copyright © 2018年 Thread_Fight_Queue. All rights reserved.
 //
 
-#import "WLZSecondController.h"
-#import "WLZTimer.h"
+#import "TFQSecondController.h"
+#import "TFQTimer.h"
 
-@interface WLZSecondController ()
+@interface TFQSecondController ()
 
 @property (nonatomic, strong)UILabel *label;
 @property (nonatomic, assign)int repeatTime;
 //第一、二种的属性
 //@property (nonatomic, strong)NSTimer *timer;
 //第三种方法的属性
-@property (nonatomic, strong)WLZTimer *timer;
+@property (nonatomic, strong)TFQTimer *timer;
 
 @end
 
-@implementation WLZSecondController
+@implementation TFQSecondController
 
 
 - (void)didReceiveMemoryWarning {
@@ -102,7 +102,7 @@
  *
  */
 - (void)createTimer{
-    self.timer = [[WLZTimer alloc] initWithTimeInterval:1 Target:self andSelector:@selector(change)];
+    self.timer = [[TFQTimer alloc] initWithTimeInterval:1 Target:self andSelector:@selector(change)];
 }
 
 - (void)change{
