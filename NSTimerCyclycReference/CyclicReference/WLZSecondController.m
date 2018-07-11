@@ -8,7 +8,6 @@
 
 #import "WLZSecondController.h"
 #import "WLZTimer.h"
-#import "WLZThread.h"
 
 @interface WLZSecondController ()
 
@@ -18,8 +17,6 @@
 //@property (nonatomic, strong)NSTimer *timer;
 //第三种方法的属性
 @property (nonatomic, strong)WLZTimer *timer;
-
-@property (nonatomic, strong)WLZThread *thread;
 
 @end
 
@@ -39,72 +36,8 @@
     self.label.text = @"60";
     self.label.textColor = [UIColor blackColor];
     [self.view addSubview:self.label];
-//    [self createTimer];
-    [self threadTest];
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil];
-    self.navigationItem.rightBarButtonItem  = nil;
-    UIBarButtonItem * newButton = [[UIBarButtonItem alloc] initWithTitle:@"发布" style:UIBarButtonItemStylePlain target:self action:@selector(senderHelp)];
-    [newButton setTintColor:[UIColor whiteColor]];
-    [newButton setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:15]} forState:UIControlStateNormal];
-    [newButton setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor redColor], NSFontAttributeName:[UIFont systemFontOfSize:15]} forState:UIControlStateHighlighted];
-    
-    UIButton *btn = [[UIButton alloc] init];
-    [btn setTitle:@"发布" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-    btn.titleLabel.font = [UIFont systemFontOfSize:15];
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    self.navigationItem.rightBarButtonItem = item;
+    [self createTimer];
 }
-
-- (void)senderHelp{
-    NSLog(@"发布");
-}
-
-- (void)threadTest{
-    NSLog(@"1");
-    SEL sel = @selector(getCurrentThread);
-//    WLZThread *thread = [[WLZThread alloc] init];
-//    WLZThread *thread [[WLZThread alloc] initWithBlock:^{}];
-    
-//    //NSThread 创建方式1
-    WLZThread *thread = [[WLZThread alloc] initWithTarget:self selector:@selector(createThread:) object:nil];
-    [thread start];
-//
-//    //NSThread 创建方式2
-//    [WLZThread detachNewThreadWithBlock:^{
-//
-//    }];
-//
-//    //NSThread 创建方式3
-//    [WLZThread detachNewThreadSelector:@selector(createThread:) toTarget:self withObject:nil];
-//
-    [self performSelector:sel onThread:thread withObject:nil waitUntilDone:NO];
-    thread.name = @"thread2";
-    NSLog(@"thread.name === %@",thread.name);
-    NSLog(@"2");
-}
-
-- (void)createThread:(NSString *)str{
-    NSLog(@"createThread");
-    [[NSRunLoop currentRunLoop] run];
-//    [self.thread cancel];
-//    self.thread = nil;
-//    [NSThread exit];
-}
-
-- (void)getCurrentThread{
-    NSThread *currentThread = [NSThread currentThread];
-    NSLog(@"currentThread == %@",currentThread);
-    NSLog(@"3");
-    [currentThread cancel];
-    if([currentThread isCancelled]){
-        NSLog(@"cancelled");
-        [NSThread exit];
-    }
-}
-
-
 
 #pragma mark - 第一种方法
 //- (void)createTimer{
