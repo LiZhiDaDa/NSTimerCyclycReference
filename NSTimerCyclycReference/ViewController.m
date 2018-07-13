@@ -24,8 +24,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
     //test
+    //我提交了1.0版本  我在1.0change
     //我提交了1.0版本  我在1.0change 在branch上修改
-    //我提交东西试试会不会保存
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
