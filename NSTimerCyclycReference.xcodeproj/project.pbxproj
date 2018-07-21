@@ -15,7 +15,7 @@
 		F70789EF20D75D4C0066F7F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F70789EE20D75D4C0066F7F4 /* main.m */; };
 		F7078A1820D89DCC0066F7F4 /* TFQTimerTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7078A1720D89DCC0066F7F4 /* TFQTimerTypeController.m */; };
 		F7078A1E20D8D8710066F7F4 /* TFQTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7078A1D20D8D8710066F7F4 /* TFQTimer.m */; };
-		F7E9E0A420D953580009D1D8 /* TFQSecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7078A1220D75D800066F7F4 /* TFQSecondController.m */; };
+		F7B78F7321034F6600BCDDC9 /* TFQSecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7078A1220D75D800066F7F4 /* TFQSecondController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -268,7 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7E9E0A420D953580009D1D8 /* TFQSecondController.m in Sources */,
+				F7B78F7321034F6600BCDDC9 /* TFQSecondController.m in Sources */,
 				F70789E420D75D4A0066F7F4 /* ViewController.m in Sources */,
 				F70789EF20D75D4C0066F7F4 /* main.m in Sources */,
 				F70789E120D75D4A0066F7F4 /* AppDelegate.m in Sources */,

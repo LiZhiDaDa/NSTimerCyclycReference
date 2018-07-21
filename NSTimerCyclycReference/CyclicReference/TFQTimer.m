@@ -27,13 +27,17 @@
 
 - (void)dosomething{
     //这里是否要开启线程
-//    dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         id target = self.target;
         SEL selector = self.selector;
         if([target respondsToSelector:selector]){
-            [target performSelector:selector withObject:nil];
+            //解释参考另一个demo https://github.com/LiZhiDaDa/TFQWeakTimer
+            //[target performSelector:selector withObject:nil];
+            IMP imp = [target methodForSelector:selector];
+            void (*func)(id, SEL) = (void *)imp;
+            func(target, selector);
         }
-//    });
+    });
 }
 
 - (void)closeTimer{
