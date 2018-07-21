@@ -26,7 +26,7 @@
 }
 
 - (void)dosomething{
-    //这里是否要开启线程
+    //为了不阻挡主线程，所以要异步。
     dispatch_async(dispatch_get_main_queue(), ^{
         id target = self.target;
         SEL selector = self.selector;
